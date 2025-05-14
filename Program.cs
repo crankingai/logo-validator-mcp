@@ -29,7 +29,7 @@ public static class StringFormattingTool
 [McpServerToolType]
 public static class LogoUrlValidatorTool
 {
-   [McpServerTool]
+   [McpServerTool(Name = "validate_logo_url")] // LLMs might prefer snake-case
    [Description("Checks whether the URL resolves to a valid logo.")]
    public static async Task<bool> ValidateLogoUrl(string logo_url)
    {
